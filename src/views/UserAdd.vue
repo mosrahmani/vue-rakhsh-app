@@ -72,7 +72,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-end">
+                <div class="d-flex justify-content-end mt-4">
                     <div class="btn btn-light ms-3" @click="back">انصراف</div>
                     <button class="btn btn-primary btn-shadow" type="submit">اضافه کردن کاربر</button>
 
