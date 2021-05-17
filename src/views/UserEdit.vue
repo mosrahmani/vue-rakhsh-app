@@ -11,7 +11,7 @@
             <form v-if="user" @submit.prevent="editUser()">
                 <div class="mb-3" :class="{ 'form-error': $v.user.firstName.$error }">
                     <label class="form-label" for="firstName">نام</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="name@example.com" :value="user.firstName" @input="updateFiled($event)" @blur="$v.user.firstName.$touch()">
+                    <input type="text" class="form-control" id="firstName" placeholder="نام کاربر را وارد کنید" :value="user.firstName" @input="updateFiled($event)" @blur="$v.user.firstName.$touch()">
                     <div v-if="$v.user.firstName.$error" class="mt-1 invalid-feedback">
                         <div v-if="!$v.user.firstName.required">
                             این فیلد الزامی می باشد
@@ -20,7 +20,7 @@
                 </div>
                 <div class="mb-3" :class="{ 'form-error': $v.user.lastName.$error }">
                     <label class="form-label" for="lastName">نام خانوادگی</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="name@example.com" :value="user.lastName" @input="updateFiled($event)" @blur="$v.user.lastName.$touch()">
+                    <input type="text" class="form-control" id="lastName" placeholder="نام خانوادگی کاربر را وارد کنید" :value="user.lastName" @input="updateFiled($event)" @blur="$v.user.lastName.$touch()">
                     <div v-if="$v.user.lastName.$error" class="mt-1 invalid-feedback">
                         <div v-if="!$v.user.lastName.required">
                             این فیلد الزامی می باشد
@@ -29,7 +29,7 @@
                 </div>
                 <div class="mb-3" :class="{ 'form-error': $v.user.birthDay.$error }">
                     <label class="form-label" for="birthDay">تاریخ تولد</label>
-                    <input type="text" class="form-control" id="birthDay" placeholder="name@example.com" :value="user.birthDay" @input="updateFiled($event)" @blur="$v.user.birthDay.$touch()">
+                    <input type="text" class="form-control" id="birthDay" placeholder="تاریخ تولد کاربر را انتخاب کنید" :value="user.birthDay" @input="updateFiled($event)" @blur="$v.user.birthDay.$touch()">
                     <date-picker
                         v-model="user.birthDay"
                         format="jYYYY/jMM/jDD"
